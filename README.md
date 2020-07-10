@@ -1,4 +1,4 @@
-Унаследован https://github.com/lowbase/yii2-sms
+Унаследован от https://github.com/lowbase/yii2-sms
 
 СМС-менеджер
 ============
