@@ -1,3 +1,5 @@
+Унаследован https://github.com/lowbase/yii2-sms
+
 СМС-менеджер
 ============
 
