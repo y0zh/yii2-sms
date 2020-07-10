@@ -6,12 +6,12 @@
  * @version   1.0.0
  */
 
-namespace lowbase\sms;
+namespace y0zh\sms;
 
 use yii\base\ErrorException;
 use yii\base\Exception;
 use yii\base\BaseObject;
-use lowbase\sms\models\Sms as smsModel;
+use y0zh\sms\models\Sms as smsModel;
 use yii\helpers\ArrayHelper;
 
 /**
