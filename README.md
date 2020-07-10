@@ -12,15 +12,15 @@ Yii2-sms - менеджер отправки Смс-сообщений чере�
 Установка
 ---------
 ```
-php composer.phar require --prefer-dist lowbase/yii2-sms "*"
+php composer.phar require --prefer-dist y0zh/yii2-sms "*"
 ```
 или 
 ```
-"lowbase/yii2-sms": "*"
+"y0zh/yii2-sms": "*"
 ```
 затем запускаем миграции для создания таблицы БД
 ```
-php yii migrate --migrationPath=@vendor/lowbase/yii2-sms/migrations
+php yii migrate --migrationPath=@vendor/y0zh/yii2-sms/migrations
 ```
 
 Настройка
@@ -29,26 +29,26 @@ php yii migrate --migrationPath=@vendor/lowbase/yii2-sms/migrations
 'components' => [
     ...
         'sms' => [
-            'class' => 'lowbase\sms\Sms',
+            'class' => 'y0zh\sms\Sms',
             'cascade' => true,
             'services' => [
                 // http://iqsms.ru/api/api_rest/
                 'iqsmsc_ru' => [
-                    'class' => 'lowbase\sms\services\IqmscRuService',
+                    'class' => 'y0zh\sms\services\IqmscRuService',
                     'login' => '...',
                     'password' => '...',
                     'order' => 2,
                 ],
                 // http://iqsms.ru/api/api_rest/
                 'iqsmsc_ru_2' => [
-                    'class' => 'lowbase\sms\services\IqmscRuService',
+                    'class' => 'y0zh\sms\services\IqmscRuService',
                     'login' => '...',
                     'password' => '...',
                     'order' => 3,
                 ],
                 // http://smsc.ru/api/
                 'smsc_ru' => [
-                    'class' => 'lowbase\sms\services\SmscRuService',
+                    'class' => 'y0zh\sms\services\SmscRuService',
                     'login' => '...',
                     'password' => '...',
                     'order' => 1
@@ -61,7 +61,7 @@ php yii migrate --migrationPath=@vendor/lowbase/yii2-sms/migrations
 ,где `'cascade' => true` - автоматическая отправка смс-сообщения следующим сервисом при неудачной отправке текущим.
 `services` - сервисы отправки сообщений с аутентификационными данными (логин и пароль), `order` (обязательно для заполнения) - порядок вызова сервисов при каскадной отправке. Названия сервисов (`iqsmsc_ru, iqsmsc_ru_2, smsc_ru`) можно заменить на свои.
 
-Возможно добавление собственных сервисов. Их необходимо наследовать от lowbase\sms\AbstractService, и указать в конфигурации, представленной выше.
+Возможно добавление собственных сервисов. Их необходимо наследовать от y0zh\sms\AbstractService, и указать в конфигурации, представленной выше.
 
 Использование
 -------------
