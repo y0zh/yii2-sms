@@ -10,7 +10,7 @@ namespace lowbase\sms;
 
 use yii\base\ErrorException;
 use yii\base\Exception;
-use yii\base\Object;
+use yii\base\BaseObject;
 use lowbase\sms\models\Sms as smsModel;
 use yii\helpers\ArrayHelper;
 
@@ -18,7 +18,7 @@ use yii\helpers\ArrayHelper;
  * Class Sms
  * @package lowbase\sms
  */
-class Sms extends Object
+class Sms extends BaseObject
 {
 	/**
 	 * Sms services and their settings
