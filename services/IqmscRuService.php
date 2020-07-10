@@ -6,15 +6,15 @@
  * @version   1.0.0
  */
 
-namespace lowbase\sms\services;
+namespace y0zh\sms\services;
 
-use lowbase\sms\AbstractService;
-use lowbase\sms\models\Sms;
+use y0zh\sms\AbstractService;
+use y0zh\sms\models\Sms;
 
 /**
  * Class IqmscRuService
  * @link http://iqsms.ru/api/api_rest/
- * @package lowbase\sms
+ * @package y0zh\sms
  */
 class IqmscRuService extends AbstractService
 {
