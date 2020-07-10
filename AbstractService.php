@@ -8,13 +8,13 @@
 
 namespace lowbase\sms;
 
-use yii\base\Object;
+use yii\base\BaseObject;
 
 /**
  * Class AbstractService
  * @package lowbase\sms
  */
-abstract class AbstractService extends Object
+abstract class AbstractService extends BaseObject
 {
 	public $login;
 	public $password;
