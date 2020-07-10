@@ -6,7 +6,7 @@
  * @version   1.0.0
  */
 
-namespace lowbase\sms\models;
+namespace y0zh\sms\models;
 
 use Yii;
 use yii\behaviors\BlameableBehavior;
@@ -78,9 +78,9 @@ class Sms extends \yii\db\ActiveRecord
             self::STATUS_UNKNOWN => Yii::t('sms', 'Unknown'),
         ];
         if ($status) {
-
             return (in_array($status, array_keys($statuses))) ? $statuses[$status] : null;
-        } else {
+        }
+        else {
 
             return $statuses;
         }
