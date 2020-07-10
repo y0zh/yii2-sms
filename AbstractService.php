@@ -6,13 +6,13 @@
  * @version   1.0.0
  */
 
-namespace lowbase\sms;
+namespace y0zh\sms;
 
 use yii\base\BaseObject;
 
 /**
  * Class AbstractService
- * @package lowbase\sms
+ * @package y0zh\sms
  */
 abstract class AbstractService extends BaseObject
 {
