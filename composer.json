@@ -1,22 +1,16 @@
 {
-	"name": "lowbase/yii2-sms",
+	"name": "y0zh/yii2-sms",
 	"description": "Yii2 Sms Extension.",
 	"keywords": ["yii2", "extension", "sms"],
-	"homepage": "https://github.com/lowbase/yii2-sms",
+	"homepage": "https://github.com/y0zh/yii2-sms",
 	"type": "yii2-extension",
 	"license": "MIT",
-	"authors": [
-		{
-			"name": "Yuri Shekhovtsov",
-			"email": "shekhovtsovy@yandex.ru"
-		}
-	],
 	"require": {
 		"yiisoft/yii2": "~2.0.0"
 	},
 	"autoload": {
 		"psr-4": {
-			"\\lowbase\\sms\\": ""
+			"\\y0zh\\sms\\": ""
 		}
 	}
 }
