@@ -6,15 +6,15 @@
  * @version   1.0.0
  */
 
-namespace lowbase\sms\services;
+namespace y0zh\sms\services;
 
-use lowbase\sms\AbstractService;
-use lowbase\sms\models\Sms;
+use y0zh\sms\AbstractService;
+use y0zh\sms\models\Sms;
 
 /**
  * Class SmscRuService
  * @link http://smsc.ru/api/
- * @package lowbase\sms
+ * @package y0zh\sms
  */
 class SmscRuService extends AbstractService
 {
