@@ -93,7 +93,7 @@ class Sms extends \yii\db\ActiveRecord
     {
         return [
             [['phone', 'text'], 'required'],
-            ['phone', 'match', 'pattern' => '/^(\+7){1}\d{10}$/', 'message' => Yii::t('sms', 'Enter phone in format +79801234567.')],
+            ['phone', 'match', 'pattern' => '/^(\+)\d{10,14}$/', 'message' => Yii::t('sms', 'Enter phone in format +79801234567.')],
             [['text', 'provider_answer'], 'string'],
             [['type', 'for_user_id', 'status', 'created_by'], 'integer'],
             [['created_at', 'must_sent_at', 'check_status_at'], 'safe'],
