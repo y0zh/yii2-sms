@@ -94,7 +94,7 @@ class Sms extends BaseObject
 		if (!isset(\Yii::$app->i18n->translations['sms']) && !isset(\Yii::$app->i18n->translations['sms/*'])) {
 			\Yii::$app->i18n->translations['sms'] = [
 				'class' => 'yii\i18n\PhpMessageSource',
-				'basePath' => '@vendor/lowbase/yii2-sms/messages',
+				'basePath' => '@vendor/y0zh/yii2-sms/messages',
 				'forceTranslation' => true,
 				'fileMap' => [
 					'sms' => 'sms.php'
